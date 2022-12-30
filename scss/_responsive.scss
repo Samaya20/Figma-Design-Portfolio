@@ -1,0 +1,304 @@
+@media (max-width: 900px) {
+    .header {
+        .nav_links {
+            flex-basis: 1% !important;
+
+            .nav_items {
+                display: none;
+            }
+
+            #open_btn {
+                display: block !important;
+            }
+        }
+    }
+
+    .home {
+        .page_title {
+            h1 {
+                font-size: 28px !important;
+            }
+        }
+
+        .overlay {
+            h1 {
+                font-size: 25px !important;
+            }
+        }
+    }
+
+    .footer {
+        .copy_right {
+            text-align: start !important;
+        }
+    }
+
+    .works {
+        .list {
+            width: 100% !important;
+
+            .list_item {
+                font-size: 8px !important;
+            }
+        }
+
+        .list_container {
+            .row {
+                .text_box {
+                    h1 {
+                        font-size: 18px !important;
+                    }
+
+                    p {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+
+        .more_btn {
+            font-size: 10px !important;
+            padding: 10px 15px !important
+        }
+    }
+
+    .about {
+        .container-fluid {
+            padding: 40px 20px 40px 20px !important;
+
+            .row {
+                .text_box {
+                    padding-top: 0px !important;
+                    padding-bottom: 50px;
+
+                    h1 {
+                        font-size: 20px !important;
+                    }
+
+                    .social_links {
+                        width: 100% !important;
+
+                        a {
+                            font-size: 15px !important;
+                        }
+                    }
+
+                    .cv_btn {
+                        font-size: 18px !important;
+                    }
+                }
+
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    .contact {
+        .contact_left {
+            width: 100% !important;
+
+            .contact_info {
+                a {
+                    font-size: 12px !important;
+                }
+            }
+        }
+
+        .contact_right {
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+
+            .row {
+                width: 100% !important;
+                margin: 0 !important;
+
+                .col-12 {
+
+                    .form_input {
+                        width: 100% !important;
+
+                        input {
+                            width: 100% !important;
+                        }
+                    }
+                }
+
+                .categories {
+                    label {
+                        font-size: 9px !important;
+                        padding: 10px !important;
+                    }
+                }
+            }
+
+            .end_col {
+                display: flex;
+                justify-content: inherit !important;
+            }
+
+            .start_col {
+                display: flex;
+                justify-content: inherit !important;
+            }
+        }
+    }
+
+    .ux {
+        .col-lg-9 {
+            .text_wrapper {
+                width: 100% !important;
+
+                .page_title {
+                    h1 {
+                        font-size: 25px !important;
+                    }
+                }
+
+                p {
+                    font-size: 20px !important;
+                }
+            }
+
+            .explore {
+                flex-direction: column;
+                align-items: start !important;
+            }
+        }
+
+        .col-lg-3 {
+            .right_box {
+                width: 100% !important;
+                justify-content: center !important;
+
+                h1 {
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+
+    .ui {
+        .col-lg-9 {
+            .text_wrapper {
+                width: 100% !important;
+
+                .page_title {
+                    h1 {
+                        font-size: 25px !important;
+                    }
+                }
+
+                p {
+                    font-size: 20px !important;
+                }
+            }
+
+            .explore {
+                flex-direction: column;
+                align-items: start !important;
+            }
+        }
+
+        .col-lg-3 {
+            .right_box {
+                width: 100% !important;
+                justify-content: center !important;
+
+                h1 {
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+
+    .graphic {
+        .col-lg-9 {
+            .text_wrapper {
+                width: 100% !important;
+
+                .page_title {
+                    h1 {
+                        font-size: 25px !important;
+                    }
+                }
+
+                p {
+                    font-size: 20px !important;
+                }
+            }
+
+            .explore {
+                flex-direction: column;
+                align-items: start !important;
+            }
+        }
+
+        .col-lg-3 {
+            .right_box {
+                width: 100% !important;
+                justify-content: center !important;
+
+                h1 {
+                    font-size: 28px !important;
+                }
+            }
+        }
+    }
+
+    .photography {
+        .col-12 {
+            .text_wrapper {
+                width: 100% !important;
+
+                .page_title {
+                    h1 {
+                        font-size: 25px !important;
+                    }
+                }
+
+                p {
+                    width: 100% !important;
+                    font-size: 20px !important;
+                    text-align: justify !important;
+                }
+            }
+
+            .explore {
+                flex-direction: column;
+                align-items: start !important;
+            }
+        }
+    }
+
+    .videography {
+        .col-12 {
+            .text_wrapper {
+                width: 100% !important;
+
+                .page_title {
+                    h1 {
+                        font-size: 25px !important;
+                    }
+                }
+
+                p {
+                    width: 100% !important;
+                    font-size: 20px !important;
+                    text-align: justify !important;
+                }
+
+                img {
+                    height: 100% !important;
+                }
+            }
+
+            .explore {
+                flex-direction: column;
+                align-items: start !important;
+            }
+        }
+    }
+}

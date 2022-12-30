@@ -1,0 +1,48 @@
+.info {
+    background: var(--shader-bg);
+
+    .container-fluid {
+        padding: 20px 40px 20px 40px !important;
+
+        .row {
+            .col-12 {
+                padding: 0 !important;
+                display: flex;
+                justify-content: center;
+
+                &:nth-child(4) {
+                    a {
+                        text-decoration: underline !important;
+                        color: var(--contrast-dark) !important;
+                    }
+                }
+
+                .info_list {
+                    .list_title {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 147.4%;
+                        letter-spacing: 0.05em;
+                        color: var(--dark);
+                    }
+
+                    .list_item {
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 147.4%;
+                        letter-spacing: 0.05em;
+
+                        a {
+                            color: var(--dark);
+                            @include transition;
+
+                            &:hover {
+                                color: var(--contrast-dark);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

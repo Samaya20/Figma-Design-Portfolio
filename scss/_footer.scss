@@ -1,0 +1,47 @@
+.footer {
+    background: var(--shader-bg);
+
+    .container-fluid {
+
+        .row {
+            @include between;
+            padding: 18px 15px;
+
+            .col-12 {
+                padding: 0 !important;
+            }
+
+            .text_box {
+                h1 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    color: var(--dark);
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: var(--contrast-dark);
+                    @include align-center;
+
+                    i {
+                        font-size: 25px;
+                        color: var(--dark);
+                    }
+                }
+            }
+
+            .copy_right {
+                text-align: end;
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}

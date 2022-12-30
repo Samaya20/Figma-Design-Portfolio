@@ -1,0 +1,151 @@
+.ui {
+    .container-fluid {
+        padding: 60px 20px;
+
+        .row {
+            .col-lg-9 {
+                .text_wrapper {
+                    width: 100%;
+
+
+                    .page_title {
+                        h1 {
+                            position: relative;
+                            color: var(--dark);
+                            font-weight: 500;
+                            font-size: 35px;
+                            line-height: 35px;
+                            padding-left: 15px;
+
+                            &::before {
+                                position: absolute;
+                                left: 0;
+                                content: "";
+                                height: 100%;
+                                width: 5px;
+                                background: var(--contrast-light);
+                            }
+                        }
+                    }
+
+                    p {
+                        font-weight: 400;
+                        font-size: 25px;
+                        line-height: 143.9%;
+                        text-align: justify;
+                    }
+                }
+
+                .explore {
+                    display: flex;
+                    align-items: end;
+
+                    h1 {
+                        color: var(--contrast-light);
+                        position: relative;
+                        font-weight: 400;
+                        font-size: 20px;
+                        padding-left: 15px;
+
+                        &::before {
+                            position: absolute;
+                            left: 0;
+                            content: "";
+                            height: 100%;
+                            width: 5px;
+                            background: var(--dark);
+                        }
+                    }
+
+                    .source {
+                        @include align-center;
+
+                        svg {
+                            width: 20px !important;
+                            background: var(--dark);
+                            border-radius: 3px;
+                        }
+
+                        path {
+                            fill: var(--white-bg);
+                        }
+
+                        span {
+                            background: var(--dark);
+                            color: var(--white-bg);
+                            padding: 3px 20px;
+                            font-size: 16px;
+                            border-radius: 3px;
+                            font-weight: 300;
+                        }
+
+
+
+                    }
+
+                }
+            }
+
+            // .owl-item{
+            //     width: 1050px !important;
+            // }
+
+            .owl-theme .owl-dots .owl-dot span {
+                background: var(--dark);
+            }
+
+            .owl-theme .owl-dots .owl-dot.active span {
+                background: var(--contrast-light);
+            }
+
+            .owl-theme .owl-nav.disabled+.owl-dots {
+                margin: 20px !important;
+            }
+
+            .col-lg-3 {
+                display: flex;
+                justify-content: end;
+                align-items: start;
+
+                .right_box {
+                    width: 65%;
+                    padding: 40px 25px;
+                    background: var(--shader-bg);
+                    border-radius: 5px;
+
+                    h1 {
+                        font-weight: 500;
+                        font-size: 35px;
+                        line-height: 35px;
+                        color: var(--dark);
+                    }
+
+                    .icons {
+                        width: 50%;
+                        @include between;
+
+                        svg {
+                            width: 24px;
+                            fill: var(--contrast-light);
+                        }
+                    }
+
+                    .tag {
+                        @include align-center;
+
+                        svg {
+                            width: 24px;
+                            fill: var(--contrast-light);
+                        }
+
+                        span {
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: var(--dark);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Works</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body class="h_100_body">
+
+    <!------------------------ Header start ------------------------>
+
+    <header id="header" class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="logo">
+                    <img src="img/Icon Glasses 1.png" alt="logo">
+                </div>
+                <nav class="nav_links">
+                    <ul class="nav_items">
+                        <li class="nav_item"><a href="index.html">Home</a></li>
+                        <li class="nav_item active"><a href="javascript:void(0)">Works</a></li>
+                        <li class="nav_item"><a href="about.html">About</a></li>
+                        <li class="nav_item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <i id="open_btn" class="icofont-navigation-menu d-none"></i>
+                </nav>
+                <nav class="mobile_nav_links">
+                    <ul class="mobile_nav_items">
+                        <li class="mobile_nav_item"><a href="index.html">Home</a></li>
+                        <li class="mobile_nav_item active"><a href="javascript:void(0)">Works</a></li>
+                        <li class="mobile_nav_item"><a href="about.html">About</a></li>
+                        <li class="mobile_nav_item"><a href="contact.html">Contact</a></li>
+                        <i id="close_btn" class="icofont-close"></i>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------ Header end ------------------------>
+
+    <!------------------------ Works start ------------------------>
+
+    <section id="works" class="works">
+        <div class="container-fluid">
+            <ul class="list">
+                <li class="list_item filter_btn active" data-filter="uxui">UX/UI Design</li>
+                <li class="list_item filter_btn" data-filter="graphic">Graphic (Logo) design</li>
+                <li class="list_item filter_btn" data-filter="photography">Photography</li>
+                <li class="list_item filter_btn" data-filter="videography">Videography</li>
+                <li class="list_item filter_btn" data-filter="all">All together</li>
+                <li class="list_item filter_btn" data-filter="clear">Clear selection</li>
+            </ul>
+            <div class="list_container">
+                <div class="row" id="list_row">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------ Works end ------------------------>
+
+    <!------------------------ Footer start ------------------------>
+
+    <footer id="footer" class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text_box col-12 col-lg-6">
+                    <h1>Like my designs?</h1>
+                    <a href="contact.html">contact <i class="icofont-long-arrow-right"></i></a>
+                </div>
+                <div class="copy_right col-12 col-lg-6">
+                    <p>&copy; 2022 all right reserved. Tunar Abuzar</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------------------------ Footer end ------------------------>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

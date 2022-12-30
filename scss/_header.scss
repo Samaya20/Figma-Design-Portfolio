@@ -1,0 +1,126 @@
+.header {
+    width: 100%;
+
+    .container-fluid {
+        width: 90% !important;
+        background: var(--white);
+        padding: 20px 0px;
+
+        .row {
+            width: 100%;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+
+            @include between;
+
+            .logo {
+                padding: 0px !important;
+                display: inline-block;
+
+                img {
+                    width: 64px;
+                    height: 24px;
+                }
+            }
+
+            .nav_links {
+                @include align-center;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+
+                .nav_items {
+                    width: 100%;
+                    padding: 0 !important;
+                    margin: 0 !important;
+
+                    .nav_item {
+                        display: inline-block;
+                        font-size: 22px;
+                        font-weight: 500;
+                        font-family: 500;
+
+                        &:not(:first-child) {
+                            padding-left: 35px;
+                        }
+
+                        a {
+                            color: var(--dark);
+                            @include transition;
+
+                            &:hover {
+                                color: var(--contrast-dark);
+                            }
+                        }
+                    }
+
+                    .active {
+                        a {
+                            color: var(--contrast-dark);
+                        }
+                    }
+
+                }
+
+                #open_btn {
+                    font-size: 25px;
+                }
+            }
+
+            .mobile_nav_links {
+                width: 100% !important;
+                height: 100%;
+                position: absolute;
+                @include center;
+                background: rgba(0, 0, 0, 0.226);
+                top: 0;
+                left: -100%;
+                z-index: 99;
+                @include transition;
+
+                .mobile_nav_items {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: var(--shader-bg);
+                    width: 80%;
+                    height: 100%;
+                    @include center;
+                    flex-direction: column;
+
+                    .mobile_nav_item {
+                        line-height: 45px;
+
+                        a {
+                            font-size: 30px;
+                            font-weight: 500;
+                            color: var(--dark);
+                        }
+                    }
+
+                    .active {
+                        a {
+                            color: var(--contrast-dark);
+                        }
+                    }
+
+                    #close_btn {
+                        position: absolute;
+                        top: 3%;
+                        right: 5%;
+                        font-size: 35px;
+                    }
+                }
+
+            }
+
+            .mobile_nav_show {
+                left: 0 !important;
+            }
+        }
+
+        .row>* {
+            width: auto !important;
+        }
+    }
+
+}

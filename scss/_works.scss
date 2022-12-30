@@ -1,0 +1,114 @@
+.works {
+    .container-fluid {
+        width: 90%;
+        padding: 60px 0px !important;
+
+        .list {
+            width: 100%;
+            @include start;
+            flex-wrap: wrap;
+
+            .list_item {
+                @include center;
+                padding: 8px 16px;
+                margin: 5px;
+                font-size: 18px;
+                font-weight: 400;
+                border-radius: 3px;
+                cursor: pointer;
+                color: rgba(0, 0, 0, 0.45);
+                background: var(--shader-bg);
+                @include transition;
+
+                &:hover {
+                    background: var(--contrast-light);
+                    color: var(--white-bg);
+                }
+            }
+
+            .active {
+                background: var(--contrast-light);
+                color: var(--white-bg);
+            }
+
+        }
+
+        .list_container {
+            padding: 50px 0px 20px 0px;
+
+            .row {
+
+                .col-12 {
+                    position: relative;
+                    margin-bottom: 30px;
+                    @include transition;
+                    cursor: pointer;
+
+                    .img_box {
+                        height: 100%;
+                        width: 81%;
+                        border-radius: 10px;
+                    }
+
+                    &:hover {
+                        transform: scale(0.9);
+                    }
+
+                    .text_box {
+                        position: absolute;
+                        bottom: 3%;
+                        right: 2%;
+                        z-index: 5;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+                        flex-direction: column;
+
+
+                        h1 {
+                            font-size: 24px;
+                            background: var(--contrast-light);
+                            color: var(--dark);
+                            font-weight: 500;
+                            line-height: 139.4%;
+                            padding: 3px 8px;
+                        }
+
+                        p {
+                            color: var(--white-bg);
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 25px;
+                            margin-top: 10px;
+                        }
+
+                        .content_bottom {
+                            width: 100%;
+                            @include between;
+
+
+                            .icon_box {
+                                padding-top: 5px;
+
+                                svg {
+                                    width: 18px;
+                                    padding: 3px;
+                                    background: var(--contrast-dark);
+                                    fill: var(--white-bg);
+                                }
+                            }
+
+                            .more_btn {
+                                font-weight: 500;
+                                font-size: 13px;
+                                background: var(--dark);
+                                color: var(--white-bg);
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

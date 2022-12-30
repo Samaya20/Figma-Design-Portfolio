@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none !important;
+	font-family: "Ubuntu", sans-serif !important;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.h_100_body {
+	.header {
+		.container-fluid {
+			width: 90% !important;
+			padding-left: 0px !important;
+			padding-right: 00px !important;
+		}
+	}
+
+	.container-fluid {
+		padding-left: 40px !important;
+		padding-right: 40px !important;
+	}
+}
+
+.gutter_40_body {
+	.header {
+		.container-fluid {
+			width: 100% !important;
+		}
+	}
+
+	.container-fluid {
+		padding-left: 40px !important;
+		padding-right: 40px !important;
+	}
+
+	#btnScrollUp {
+		position: fixed;
+		bottom: 10%;
+		right: 5%;
+		padding: 5px !important;
+		border-radius: 5px;
+		border: none;
+		background: var(--contrast-light);
+		color: var(--dark);
+		z-index: 990;
+		transition: all 0.3s ease-in-out;
+
+		i {
+			font-size: 30px;
+		}
+
+		&:hover,
+		&:active {
+			background: #c0875f;
+		}
+	}
+}
+
+// Scrollbar
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--dark);
+	border-radius: 30px;
+}
