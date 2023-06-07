@@ -810,11 +810,6 @@ a:not(.about .container-fluid .row .text_box .social_links:first-child) {
   font-size: 18px;
   color: rgba(0, 10, 71, 0.25);
 }
-.contact .container-fluid .row .contact_right .wrapper .row .form_textarea textarea:-ms-input-placeholder {
-  font-weight: 300;
-  font-size: 18px;
-  color: rgba(0, 10, 71, 0.25);
-}
 .contact .container-fluid .row .contact_right .wrapper .row .form_textarea textarea::placeholder {
   font-weight: 300;
   font-size: 18px;
